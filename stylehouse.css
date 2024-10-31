@@ -42,31 +42,27 @@ header {
     font-weight: bold;
 }
 
-/* Stili per i link nel menu */
 #menu {
     list-style: none;
     display: flex;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    justify-content: center;
     font-weight: bold;
 }
 
 #menu li {
-    margin-right: 20px;
-    margin-top: 12px;
+    margin: 0 20px;
 }
 
 #menu li a {
-    text-decoration: none; /* Rimuove la sottolineatura predefinita dei link */
-    color: #06146F; /* Colore del testo per i link */
-    font-weight: bold; /* Testo in grassetto per i link */
-    font-size: 19px;
+    text-decoration: none;
+    color: #020469;
+    transition: color 0.3s;
 }
 
 #menu li a:hover {
-    color: #8c95ac; /* Cambia colore quando il mouse ci passa sopra */
+    color: #b3b4da;
 }
+
 /* Styles for audio containers */
 .audio-container {
     display: flex;
