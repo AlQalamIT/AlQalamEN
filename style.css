@@ -1,123 +1,103 @@
-    /* Aggiungi il seguente CSS per disporre gli elementi orizzontalmente e centrare i bottoni sotto le immagini */
-    body, h1, ul, li {
-        margin: 0;
-        padding: 0;
-    }
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: #f0f0f0;
-        color: #333;
-    }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
 
-    header {
-        background-color: #f0f0f0;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 60px;
-        box-shadow: 0px 3px 3px rgb(2, 36, 90);
-    }
+header {
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px;
+    box-shadow: 0px 3px 3px rgb(2, 36, 90);
+    flex-direction: column; /* Imposta la direzione degli elementi in colonna */
+}
 
-    #header-content {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap; /* Permette agli elementi di andare a capo quando lo spazio è insufficiente */
-        justify-content: center; /* Centra gli elementi orizzontalmente */
-    }
+#header-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo quando lo spazio è insufficiente */
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    flex-direction: column; /* Imposta la direzione degli elementi in colonna */
+    width: 100%; /* Imposta la larghezza al 100% */
+}
 
-    #logo {
-        width: 160px;
-        height: 160px;
-        margin-right: 10px;
-        margin: 20px;
-        margin-bottom: -50px;
-        margin-top: -90px;
-        position: absolute;
-    }
+#logo {
+    width: 300px;
+    height: 90px;
+    margin: 0px; /* Centra il logo orizzontalmente */
+    margin-top: 30px;
+}
 
-    #site-title {
-        margin-top: 18px;
-        font-size: 40px;
-        font-weight: bold;
-    }
+#site-title {
+    margin-top: 14px;
+    font-size: 40px;
+    font-weight: bold;
+}
 
-    #menu {
-        list-style: none;
-        display: flex;
-    
-        top: 10%;
-        right: 20px;
-        font-weight: bold;
-        align-items: center;
-    }
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra il menu orizzontalmente */
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo quando lo spazio è insufficiente */
+}
 
-    #menu li {
-        margin-right: 20px;
-        margin-top: 80px;
-    }
+#menu li {
+    margin: 20px; /* Aggiunge margine attorno a ciascun elemento del menu */
+}
 
-    #menu li a {
-        text-decoration: none;
-        color: #06146F;
-        font-weight: bold;
-        font-size: 19px;
-    }
+#menu li a {
+    text-decoration: none;
+    color: #06146F;
+    font-weight: bold;
+    font-size: 19px;
+}
 
-    #menu li a:hover {
-        color: #8c95ac;
-    }
-
-    /* Modifica il layout quando la larghezza dello schermo è inferiore a 600px */
-    @media (max-width: 600px) {
-        #header-content {
-            flex-direction: column; /* Imposta la direzione degli elementi in colonna */
-        }
-
-        #logo {
-            margin: 0 auto; /* Centra il logo orizzontalmente */
-        }
-
-        #menu {
-            position: static; /* Rimuove la posizione assoluta */
-            margin: 0 auto; /* Centra il menu orizzontalmente */
-        }
-    }
+#menu li a:hover {
+    color: #8c95ac;
+}
 
 
-
-    .carosello {
-        position: relative;
-        width: 100%;
-    }
-    
-    .carosello img {
-        width: 100%;
-        display: none;
-    }
-    
-    .carosello img:first-child {
-        display: block;
-    }
-    
-    .carosello a {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-    }
-    
-    .carosello .precedente {
-        left: 0;
-    }
-    
-    .carosello .successivo {
-        right: 0;
-    }
+.carosello {
+    position: relative;
+    width: 100%;
+  }
+  
+  .carosello img {
+    width: 100%;
+    display: none;
+  }
+  
+  .carosello img:first-child {
+    display: block;
+  }
+  
+  .carosello a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .carosello .precedente {
+    left: 0;
+  }
+  
+  .carosello .successivo {
+    right: 0;
+  }
     
     
     #title {
